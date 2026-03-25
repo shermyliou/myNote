@@ -39,7 +39,7 @@ onMounted(() => loadNote(route.params.id))
 </script>
 
 <template>
-  <div class="mt-3 mt-lg-0 g-2 ms-md-4">
+  <div class="mt-3 mt-lg-0 g-2 ms-md-4 mx-3">
     <form @submit.prevent="">
       <button type="submit" class="btn btn-success shadow d-block rounded-pill mb-3" @click="editNote(newNoteTitle, newNoteContent, route.params.id)"><i class="bi bi-floppy-fill"></i> 儲存</button>
       <div class="alert alert-success shadow" role="alert" v-show="showAlert">

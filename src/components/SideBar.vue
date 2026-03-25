@@ -6,7 +6,7 @@ const noteStore = useNoteStore()
 </script>
 
 <template>
-  <div class="d-flex flex-column flex-shrink-0 bg-light-subtle bg-opacity-10 shadow rounded-5 overflow-y-hidden">
+  <div class="d-flex flex-column flex-shrink-0 bg-light-subtle bg-opacity-10 shadow rounded-5 overflow-y-hidden mx-2 mx-md-0">
     <ul class="nav nav-pills flex-column mt-3 rounded-bottom-5">
       <h4 class="fw-bold mt-3 mx-3">已釘選</h4>
       <ol class="list-group list-group-flush scrollarea">

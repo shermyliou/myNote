@@ -6,8 +6,8 @@ const noteStore = useNoteStore()
 </script>
 
 <template>
-  <div class="row mt-3 mt-lg-0 ps-4">
-    <div class="col-4 col-lg-3 mt-0 px-2 pt-0 pb-4" v-for="note in noteStore.searchResult(noteStore.keyword)" :key="note.id">
+  <div class="row mt-3 mt-lg-0 ps-md-4 px-3 px-sm-0">
+    <div class="col-6 col-lg-3 mt-0 px-2 pt-0 pb-4" v-for="note in noteStore.searchResult(noteStore.keyword)" :key="note.id">
       <div class="card rounded-5 shadow-sm">
         <div class="card-body">
           <div class="hstack justify-content-between align-items-center">
