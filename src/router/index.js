@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import NoteGrid from '../components/NoteGrid.vue'
 import AddNote from '../components/AddNote.vue'
 import EditNote from '../components/EditNote.vue'
 import SearchNote from '../components/SearchNote.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: '/', component: NoteGrid, name: "home", meta: { title: "My Note" } },
     { path: '/add', component: AddNote, name: "add", meta: { title: "新筆記 - My Note" } },
